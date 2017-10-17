@@ -1,0 +1,89 @@
+/**
+ *
+ * HOME PAGE TOP HERO UNIT
+ * This involves the header area. Call-out section.
+ */
+
+#masthead {
+
+	.nav-bar {
+		min-height: 100px;
+		background: rgba( black, .7 );
+
+		.title {
+			padding-top: 2rem;
+			@media ( max-width: 600px ) {
+				padding-top: 6rem;
+			}
+		}
+		.subtitle {
+			color: white;
+		}
+
+		.bt-menu-trigger {
+
+			@media ( max-width: 600px ) {
+				// border: 2px solid $imb-third;
+				// background: black;
+				
+			}
+			// @media ( max-width: 400px ) {
+			// 	top: 90px;
+			// 	left: 70%;
+			// }
+		}
+	}
+
+	.btn-box {
+		// border: 1px dotted yellow;
+		min-height: 400px;
+		margin-top: 5rem;
+
+		@include display(flex);
+		@include flex-direction(row);
+		@include justify-content(center);		
+
+		@media ( min-width: 801px ) {
+			margin-top: 15rem;
+		}
+
+		.btn-container {
+			width: 50%;
+			max-height: 100px;
+			// border: 2px solid red;
+
+			margin-top: 150px;
+
+			.flex-item {
+				margin-bottom: 2rem;
+			}
+
+			.btn {
+				min-width: 200px;
+			}
+
+			@media ( min-width: 800px ) {
+				margin-top: 250px;
+				@include display(flex);
+				@include flex-direction(row);
+				@include align-items(center);
+				@include justify-content(space-between);	
+				flex-wrap: wrap;
+
+				.flex-item {
+					width: 50%;
+				}					
+			}
+
+		}
+
+	}
+
+}
+
+#scroll-to-top {
+	border: 1px solid $imb-primary;
+	background-color: $imb-primary !important;
+	z-index: 100;
+} 
+

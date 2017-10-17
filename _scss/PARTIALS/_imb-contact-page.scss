@@ -1,0 +1,82 @@
+/**
+ *
+ * Lee Contact  Page Styles
+ *
+ */
+
+
+.page-id-1183 {
+	// border: 1rem dotted yellow;
+	#gform_4 {
+		.gfield_label {
+			color: $imb-primary;
+		}
+		.gfield {
+			padding: 0 !important;
+		}		
+		#gform_submit_button_4 {
+			background-color: $imb-primary;
+			color: white;
+			width: 100%;
+		}
+		.validation_error {
+			color: yellow;
+		}
+		.validation_message {
+			color: yellow;
+		}
+
+	}
+	#gform_confirmation_message_4 {
+		text-align: center;
+		color: greenyellow;
+		font-size: 3rem;
+	}	
+
+	// #footer-main {
+
+	// 	.right-content {
+
+	// 		.gravity-form {
+
+	// 			#gform_2 {
+	// 				margin-top: -3rem;
+
+	// 				.gfield {
+	// 					padding: 0 !important;
+	// 				}
+					
+	// 				input {
+	// 					width: 100%;
+	// 					margin-bottom: -1rem;
+	// 				}
+	// 				textarea {
+	// 					width: 100%;
+	// 					margin-bottom: -1rem;
+	// 				}
+	// 				#gform_submit_button_2 {
+	// 					width: 100%;
+	// 					border-radius: 50px;
+	// 					background: $imb-primary;
+	// 					color: white;
+	// 				}
+
+	// 				.validation_error {
+	// 					color: yellow;
+	// 				}
+	// 				.validation_message {
+	// 					color: yellow;
+	// 				}
+
+	// 			}
+	// 		}
+	// 	}
+
+	// 	#copyright {
+		
+	// 	}
+
+
+	// }	
+
+}

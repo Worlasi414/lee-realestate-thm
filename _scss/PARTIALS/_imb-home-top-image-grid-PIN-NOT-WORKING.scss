@@ -1,0 +1,82 @@
+/**
+ *
+ * START PAGE TOP ROADMAP 
+ *
+ */
+
+.imb-home-top-image-grid {
+
+	// min-height: 500px;	
+
+		@media ( min-width: 700px ) {
+
+			.pin-box {
+			  // @include display(flex);
+			  // @include flex-direction(row);
+			  // @include justify-content(space-around);
+			  // flex-wrap: wrap;
+
+			  .pin-item {
+			  	// box-shadow: 1px 1px 1px lighten( $steel, 30% );
+				// display: inline-block;
+				display: block;
+				overflow: hidden;
+				// margin-bottom: 1rem;
+						  	
+				
+				page-break-inside: avoid; /* For Firefox. */
+  				-webkit-column-break-inside: avoid; /* For Chrome & friends. */
+  				break-inside: avoid; /* For standard browsers like IE. :-) */
+				-webkit-backface-visibility: hidden;			  	
+			  }		
+
+				-webkit-column-count: 5;
+				-moz-column-count: 5;
+				column-count: 5;
+
+				-webkit-column-width: 20%;
+				-moz-column-width: 20%;
+				column-width: 20%;
+
+				-webkit-column-gap: 0;
+				-moz-column-gap: 0;
+				column-gap: 0;
+
+				.chrome {
+					display: block;
+				}
+				.safari {
+					box-shadow: 1px 1px 1px lighten( $steel, 30% );
+					display: inline-block;
+					overflow: hidden;
+				}
+			}
+
+		}			
+
+} 
+
+.imb-home-CTA {
+	min-height: 300px;
+	// margin-top: 3rem;
+	// border: 3px dotted yellow;
+
+	background: url("/wp-content/uploads/2017/10/lee-property-CTA-bg.jpg") no-repeat center center fixed;
+
+	  -webkit-background-size: cover;
+
+	  -moz-background-size: cover;
+
+	  -o-background-size: cover;
+
+	  background-size: cover;	
+
+	  .CTA-content {
+	  	margin-top: 10rem;
+
+	  	.btn {
+	  		min-width: 210px;
+	  		margin-bottom: 1rem;
+	  	}
+	  }
+}
