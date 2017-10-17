@@ -2,7 +2,6 @@
 /**
  * The template for displaying all pages with Sidebar
  *
- * Template Name: About Page Template
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages

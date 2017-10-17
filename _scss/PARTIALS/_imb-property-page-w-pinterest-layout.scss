@@ -1,0 +1,168 @@
+/**
+ *
+ * Lee Contact  Page Styles
+ *
+ */
+
+
+#imb-property-video-description {
+	min-height: 300px;
+	// border: 2px dotted red;
+	.page-title {
+		padding-top: 5rem;
+	}
+	#youtube {
+		margin-top: 5rem;
+	}
+	.description {
+		.text-content {
+			.headline {
+				padding-top: 5rem;
+				color: lighten( $gray-light, 15% );
+				
+				// border: 1px solid red;
+			}
+		}
+	}
+
+}
+
+.imb-property-CTA {
+	min-height: 300px;
+	margin-top: 3rem;
+	// border: 3px dotted yellow;
+
+	background: url("/wp-content/uploads/2017/10/lee-property-CTA-bg.jpg") no-repeat center center fixed;
+
+	  -webkit-background-size: cover;
+
+	  -moz-background-size: cover;
+
+	  -o-background-size: cover;
+
+	  background-size: cover;	
+
+	  .CTA-content {
+	  	margin-top: 10rem;
+
+	  	.headline {
+			color: lighten( $gray-light, 15% );
+
+	  	}
+		
+		@media ( max-width: 450px ) {
+	  		margin-top: 4rem;
+	  		padding-bottom: 2rem;
+	  	}	  	
+
+	  	.btn {
+	  		min-width: 210px;
+	  		margin-bottom: 1rem;
+	  	}
+	  }
+}
+
+#imb-property-facts {
+	min-height: 300px;
+	padding-top: 5rem;
+
+	.pin-box {
+		.pin-item {
+			.list-group-item {
+				background: black;
+				color: lighten( $gray-light, 15% );
+				border-color: #635e5e;
+			}
+			.list-group-item.disabled {
+				background: $steel;
+			}
+			.headline {
+				color: lighten( gray, 10% );
+			}
+		}
+	}
+
+		@media ( min-width: 700px ) {
+
+			.pin-box {
+			  // @include display(flex);
+			  // @include flex-direction(row);
+			  // @include justify-content(space-around);
+			  // flex-wrap: wrap;
+
+			  .pin-item {
+			  	// box-shadow: 1px 1px 1px lighten( $steel, 30% );
+				// display: inline-block;
+				overflow: hidden;
+				margin-bottom: 1rem;
+						  	
+				
+				page-break-inside: avoid; /* For Firefox. */
+  				-webkit-column-break-inside: avoid; /* For Chrome & friends. */
+  				break-inside: avoid; /* For standard browsers like IE. :-) */
+				-webkit-backface-visibility: hidden;			  	
+			  }		
+
+				-webkit-column-count: 3;
+				-moz-column-count: 3;
+				column-count: 3;
+
+				-webkit-column-width: 350px;
+				-moz-column-width: 350px;
+				column-width: 350px;
+
+				-webkit-column-gap: 25px;
+				-moz-column-gap: 25px;
+				column-gap: 25px;
+
+				.chrome {
+					display: block;
+				}
+				.safari {
+					box-shadow: 1px 1px 1px lighten( $steel, 30% );
+					display: inline-block;
+					overflow: hidden;
+				}
+			}
+
+		}				
+}
+
+#imb-property-details {
+	min-height: 300px;
+	margin-top: 5rem;
+	// border: 3px dotted dodgerblue;
+	.detail-table-box {
+
+
+.table > caption + thead > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > th, .table > thead:first-child > tr:first-child > td {
+    border-top: 1rem solid $steel;
+    border-bottom: 0;
+    border-left: 1px solid $steel;
+    border-right: 1px solid $steel;	    
+}
+
+
+
+		.table {
+			border-top: 0;
+		
+			td {
+				border-color: $steel;
+				color: gray;
+				background: black;
+			}
+			
+			th {
+				background: $steel;
+				.headline {
+					color: lighten( gray, 10% );
+
+				}
+			}
+			.table-bordered {
+				border-color: $steel;
+			}
+		}
+	}
+}

@@ -32,7 +32,8 @@
 <?php
     // $front_header_image = get_field('front_header_image', 3563); // 1476 is post id                               
     $blog_header_image = get_field('page_header_image', 643); // 1476 is post id                               
-    $siteLogo = get_field('site_logo', 3563); // 1476 is post id                               
+    $siteLogo = get_field('site_logo', 5); // 1476 is post id   
+    $siteSubtitle = get_field('site_subtitle', 5);                            
     $size = 'full'; // (thumbnail, medium, large, full or custom size)
 ?>	
 
@@ -45,7 +46,7 @@
 	<style type="text/css" media="screen">
 
 		#masthead {
-	 		height: 1200px;	
+	 		height: 1000px;	
 			<?php if( get_field( 'page_header_image' ) ) : ?>
 				
 				 background-image: url("<?php the_field( 'page_header_image' ); ?>");  
@@ -78,9 +79,9 @@
 
 			<div class="site-title">
 				<a class="" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-					<h1 class="title text-center">1608 Hudson Pointe Drive</h1>
+					<h1 class="title text-center"><?php echo $siteLogo; ?></h1>
 				</a>	
-				<h5 class="subtitle text-center">by Lee Brewer</h5>
+				<h5 class="subtitle text-center"><?php echo $siteSubtitle; ?></h5>
 			</div>
 			<nav id="bt-menu" class="bt-menu">
 				<a href="#" class="bt-menu-trigger"><span>Menu</span></a>

@@ -61,86 +61,19 @@
 	  	}
 	  }
 }
-
 #imb-property-facts {
-	min-height: 300px;
-	padding-top: 5rem;
-
-	.pin-box {
-		.pin-item {
-			.list-group-item {
-				background: black;
-				color: lighten( $gray-light, 15% );
-				border-color: #635e5e;
-			}
-			.list-group-item.disabled {
-				background: $steel;
-			}
-			.headline {
-				color: lighten( gray, 10% );
-			}
-		}
-	}
-
-		@media ( min-width: 700px ) {
-
-			.pin-box {
-			  // @include display(flex);
-			  // @include flex-direction(row);
-			  // @include justify-content(space-around);
-			  // flex-wrap: wrap;
-
-			  .pin-item {
-			  	// box-shadow: 1px 1px 1px lighten( $steel, 30% );
-				// display: inline-block;
-				overflow: hidden;
-				margin-bottom: 1rem;
-						  	
-				
-				page-break-inside: avoid; /* For Firefox. */
-  				-webkit-column-break-inside: avoid; /* For Chrome & friends. */
-  				break-inside: avoid; /* For standard browsers like IE. :-) */
-				-webkit-backface-visibility: hidden;			  	
-			  }		
-
-				-webkit-column-count: 3;
-				-moz-column-count: 3;
-				column-count: 3;
-
-				-webkit-column-width: 350px;
-				-moz-column-width: 350px;
-				column-width: 350px;
-
-				-webkit-column-gap: 25px;
-				-moz-column-gap: 25px;
-				column-gap: 25px;
-
-				.chrome {
-					display: block;
-				}
-				.safari {
-					box-shadow: 1px 1px 1px lighten( $steel, 30% );
-					display: inline-block;
-					overflow: hidden;
-				}
-			}
-
-		}				
-}
-
-#imb-property-details {
-	min-height: 300px;
+	// min-height: 300px;
 	margin-top: 5rem;
 	// border: 3px dotted dodgerblue;
 	.detail-table-box {
 
 
-.table > caption + thead > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > th, .table > thead:first-child > tr:first-child > td {
-    border-top: 1rem solid $steel;
-    border-bottom: 0;
-    border-left: 1px solid $steel;
-    border-right: 1px solid $steel;	    
-}
+		.table > caption + thead > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > th, .table > thead:first-child > tr:first-child > td {
+		    border-top: 1rem solid $steel;
+		    border-bottom: 0;
+		    border-left: 1px solid $steel;
+		    border-right: 1px solid $steel;	    
+		}
 
 
 
@@ -151,12 +84,28 @@
 				border-color: $steel;
 				color: gray;
 				background: black;
+				border-right: 1px solid black;
+
+				.topic {
+					color: lighten( gray, 10% );
+					text-transform: uppercase;
+				}
+				.data {
+					color: lighten( gray, 20% );
+				}
+			}
+
+			.topic-cell {
+				width: 30%;
+			}
+			.data-cell {
+				width: 70%;
 			}
 			
 			th {
 				background: $steel;
 				.headline {
-					color: lighten( gray, 10% );
+					color: lighten( gray, 20% );
 
 				}
 			}
@@ -166,3 +115,63 @@
 		}
 	}
 }
+
+
+#imb-property-details {
+	min-height: 300px;
+	margin-top: 5rem;
+	// border: 3px dotted dodgerblue;
+	.detail-table-box {
+
+		.table > caption + thead > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > th, .table > thead:first-child > tr:first-child > td {
+		    border-top: 1rem solid $steel;
+		    border-bottom: 0;
+		    border-left: 1px solid $steel;
+		    border-right: 1px solid $steel;	    
+		}
+
+
+
+		.table {
+			border-top: 0;
+		
+			td {
+				border-color: $steel;
+				color: lighten( gray, 20% );
+				background: black;
+				border-right: 1px solid black;
+
+				.topic {
+					color: lighten( gray, 10% );
+					text-transform: uppercase;
+				}
+				.data {
+					color: lighten( gray, 20% );
+				}				
+			}
+			.topic-cell {
+				width: 30%;
+			}
+			.data-cell {
+				width: 70%;
+			}			
+			
+			th {
+				background: $steel;
+				.headline {
+					color: lighten( gray, 20% );
+
+				}
+			}
+			.table-bordered {
+				border-color: $steel;
+			}
+		}
+	}
+}
+
+
+
+
+
+
