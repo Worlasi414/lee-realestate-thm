@@ -23,56 +23,63 @@
 <!-- <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/_css/default.css" /> -->
 <!-- <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/_css/component.css" /> -->
 
+<!--===========================================
+=            CUSTOM ANALYTICS TAGS - HEAD     =
+============================================-->
+
+<?php if (get_field('before_ending_head_tag')) : ?>
+
+	<?php the_field('before_ending_head_tag'); ?>
+
+<?php else : ?>
+
+	<?php the_field('before_ending_head_tag_default', 'option'); ?>
+
+<?php endif; ?>	
+
+<!--====  End of CUSTOM ANALYTICS TAGS  ====-->
 
 
 <?php wp_head(); ?>
 </head>
 
 <?php $page_header_image = get_field( 'page_header_image' ); ?>
+<?php $page_header_image_mobile = get_field( 'page_header_mobile_image' ); ?>
 <?php
     // $front_header_image = get_field('front_header_image', 3563); // 1476 is post id                               
-    $blog_header_image = get_field('page_header_image', 643); // 1476 is post id                               
+    // $blog_header_image = get_field('page_header_image', 643); // 1476 is post id                               
     $siteLogo = get_field('site_logo', 5); // 1476 is post id   
     $siteSubtitle = get_field('site_subtitle', 5);                            
-    $size = 'full'; // (thumbnail, medium, large, full or custom size)
+    
+    $facebook_link = get_field('facebook_link', 5);                            
+    $twitter_link = get_field('twitter_link', 5);                            
+    $googlepluslink = get_field('googleplus_link', 5);                            
+    $linkedin_link = get_field('linkedin_link', 5);                            
+    $youtube_link = get_field('youtube_link', 5);                            
+    $instagram_link = get_field('instagram_link', 5);                            
 ?>	
 
 <body <?php body_class(); ?>>
+<!--======================================================
+=            CUSTOM ANALYTICS TAGS - BODY TOP            =
+=======================================================-->
+
+<?php if (get_field('after_top_body_tag')) : ?>
+
+	<?php the_field('after_top_body_tag'); ?>
+
+<?php else : ?>
+
+	<?php the_field('after_top_body_tag_default', 'option'); ?>
+
+<?php endif; ?>	
+
+<!--====  End of CUSTOM ANALYTICS TAGS - BODY TOP  ====-->
 
 
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'moose-frame' ); ?></a>
 
-	<style type="text/css" media="screen">
-
-		#masthead {
-	 		height: 1000px;	
-			<?php if( get_field( 'page_header_image' ) ) : ?>
-				
-				 background-image: url("<?php the_field( 'page_header_image' ); ?>");  
-
-			<?php else : ?>	
-	
-				background-image: url("https://drive.google.com/uc?id=0B0uxrfVW1N50WV9IUHg3SXBmR2M"); 
-
-			<?php endif; ?>
-			/* background-image: url("/wp-content/uploads/2017/07/JEN2-Hero-Img-1920x800.jpg");  */
-			background-size: cover;
-			background-position: top center;
-
-		}
-
-		@media ( max-width: 800px ) {
-			#masthead {
-				height: 600px;
-				/* background-image: url("https://drive.google.com/uc?id=0B0uxrfVW1N50WV9IUHg3SXBmR2M"); */
-				background: url("/wp-content/uploads/2017/10/lee-home-page-hero-img-MOBILE-800x500.jpg") no-repeat;
-				background-size: cover;
-				background-position: top center;
-			}
-		}		
-
-	</style>			
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="nav-bar">
@@ -88,7 +95,8 @@
 				<ul class="hide">
 					<li><a href="#">HOME</a></li>
 					<li><a href="#/">PROPERTY DETAILS</a></li>
-					<!-- <li><a href="#">CONTACT</a></li> -->
+					<li><a href="#">CONTACT</a></li>
+					<!-- THESE ARE KEPT TO MAINTAIN THE NAV STRUCTURE -->
 				</ul>
 				<?php
 
@@ -96,41 +104,30 @@
 				
 				?>
 				<ul>
-					<li><a href="http://www.facebook.com/pages/" class="bt-icon icon-facebook">Facebook</a></li>
-					<li><a href="http://www.twitter.com/" class="bt-icon icon-twitter">Twitter</a></li>
-					<li><a href="https://plus.google.com/" class="bt-icon icon-gplus">Google+</a></li>
-					<li><a href="http://www.linkedin.com/" class="bt-icon icon-linkedin">Linkedin</a></li>
-					<!-- <li><a href="http://www.youtube.com/" class="bt-icon icon-youtube">YouTube</a></li> -->
-					<!-- <li><a href="http://www.instagram.com/" class="bt-icon icon-instagram">Instagram</a></li> -->
+					<?php if ($facebook_link) : ?>
+						<li><a href="<?php echo $facebook_link; ?>" target="_blank" class="bt-icon icon-facebook">Facebook</a></li>
+					<?php endif; ?>
+					<?php if ($twitter_link) : ?>
+						<li><a href="<?php echo $twitter_link ; ?>" target="_blank" class="bt-icon icon-twitter">Twitter</a></li>
+					<?php endif; ?>
+					<?php if ($googleplus_link) : ?>
+						<li><a href="<?php echo $googleplus_link; ?>" target="_blank" class="bt-icon icon-gplus">Google+</a></li>
+					<?php endif; ?>
+					<?php if ($linkedin_link) : ?>
+						<li><a href="<?php echo $linkedin_link; ?>" target="_blank" class="bt-icon icon-linkedin">Linkedin</a></li>
+					<?php endif; ?>
+					<?php if ($youtube_link) : ?>
+						<li><a href="<?php echo $youtube_link; ?>" target="_blank" class="bt-icon icon-youtube">YouTube</a></li>
+					<?php endif; ?>
+					<?php if ($instagram_link) : ?>
+						<li><a href="<?php echo $instagram_link; ?>" target="_blank" class="bt-icon icon-instagram">Instagram</a></li>
+					<?php endif; ?>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<!-- <li><a href="https://github.com/codrops" class="bt-icon icon-pinterest">Pinterest</a></li> -->
 					<!-- <li><a href="https://github.com/codrops" class="bt-icon icon-email">Email</a></li> -->
 				</ul>
 			</nav>
 		</div> <!-- END NAV BAR -->
-
-
-		<div class="btn-box">
-
-			<article class="btn-container text-center">
-
-				<!-- <div class="col-sm-6 col-md-6 col-lg-6"> -->
-				<div class="flex-item">
-					<a class="btn btn-primary btn-md" href="/property-details/">VIEW PROPERTY DETAILS</a>
-				</div>
-				<div class="flex-item">
-					<a class="btn btn-primary btn-md" href="tel:9412290213">CALL: (941) 229-0213</a>
-				</div>
-				<div class="flex-item">
-					<a class="btn btn-primary btn-md" href="#" data-toggle="modal" data-target="#myModal-hero">PRIVATE VIEWING</a>
-				</div>
-				<div class="flex-item">
-					<a class="btn btn-primary btn-md" href="#" data-toggle="modal" data-target="#myModal-hero">REQUEST INVITATION</a>
-				</div>
-				<!-- </div> -->
-				
-			</article>
-			
-		</div>
 
 
 	</header><!-- #masthead -->
@@ -141,7 +138,7 @@
 
 <!-- THE TOP HERO BUTTON MODAL CODE -->
 
-<!-- Modal Top one-->
+<!-- THIS IS NOT BEING USED AT THE MOMENT CUZ LEAD PAGES BTN IS CURRENTLY ON-->
 
 <div class="modal fade" id="myModal-hero" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 

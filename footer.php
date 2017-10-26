@@ -74,6 +74,8 @@ wp_footer();
 			</div>
 
 
+
+
 				<!--==============================================================================
 				=            THIS IS FOR DEBUGGING. PLZ DISABLE WHEN READY TO PUBLISH            =
 				===============================================================================-->
@@ -83,15 +85,40 @@ wp_footer();
 				<!--====  End of THIS IS FOR DEBUGGING. PLZ DISABLE WHEN READY TO PUBLISH  ====-->
 				
 
-		</footer>
+		</footer> <!-- END FOOTER MAIN -->
+
+
 
 	</div> <!-- FOOTER CONTAINER ENDED -->
+
+	<div id="copyright" class="container-fluid">
+
+		<h4 class="headline text-center">
+			<a href="/"><img src="/wp-content/uploads/2017/10/leeBrewerWebsite-150x40.jpg" alt="">&copy; 2017</a>
+			| <a href="http://omeninteractive.com">Site by Omen Interactive</a> 
+		</h4>
+	</div>	
 
 	</div> <!-- End of id="content" class="site-content" -->
 </div> <!-- End of id="page" class="site" -->
 <!-- JS FOR FANCY MENU -->
 <script src="<?php echo get_template_directory_uri(); ?>/js/fancy-nav/classie.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/fancy-nav/borderMenu.js"></script>
+<!--===========================================
+=            CUSTOM ANALYTICS TAGS - FOOTER     =
+============================================-->
+
+<?php if (get_field('before_bottom_body_tag')) : ?>
+
+	<?php the_field('before_bottom_body_tag'); ?>
+
+<?php else : ?>
+
+	<?php the_field('before_bottom_body_tag_default', 'option'); ?>
+
+<?php endif; ?>	
+
+<!--====  End of CUSTOM ANALYTICS TAGS  ====-->
 
 </body>
 </html>

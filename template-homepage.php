@@ -15,7 +15,7 @@
  * @package Moose_Framework
  */
 
-get_header(); ?>
+get_header('home'); ?>
 
 <?php 
 $gallery_1 = get_field('gallery_1');
@@ -38,8 +38,11 @@ if ($gallery_1) :
                     <!-- </pre> -->
                     <figure class="pin-item" >
                         <a href="<?php echo $image['url'] ?>"  data-rel="lightbox-0">
-                            <img class="img-responsive wow zoomIn center-block" src="<?php echo $image['sizes']['gallery-size'] ?>" alt="" data-wow-duration="1s" data-wow-delay="0.5s"/>
+                            <img class="img-responsive wow zoomIn center-block hidden-xs" src="<?php echo $image['sizes']['gallery-size'] ?>" alt="" data-wow-duration="1s" data-wow-delay="0.5s"/>
                         </a>
+                        
+                        <img class="img-responsive center-block visible-xs" src="<?php echo $image['sizes']['gallery-size'] ?>" alt="" />
+
                     </figure>                        
 
                 <?php endforeach; ?>    
@@ -59,8 +62,10 @@ if ($gallery_1) :
         <div class="CTA-content">
             <h2 class="headline text-center"><?php the_field('home_optin_headline'); ?></h2>
             <div class="btn-holder text-center">
-                <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_left_button_text'); ?></a>
-                <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_right_button_text'); ?></a>
+                <!-- <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_left_button_text'); ?></a> -->
+                <!-- <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_right_button_text'); ?></a> -->
+                <?php the_field('site_optin_left_btn_code', 5); ?>
+                <?php the_field('site_optin_right_btn_code', 5); ?>            
             </div>            
         </div>
 
@@ -93,8 +98,11 @@ if ($gallery_2) :
                     <!-- </pre> -->
                     <figure class="pin-item" >
                         <a href="<?php echo $image['url'] ?>"  data-rel="lightbox-0">
-                            <img class="img-responsive wow zoomIn center-block" src="<?php echo $image['sizes']['gallery-size'] ?>" alt="" data-wow-duration="1s" data-wow-delay="0.5s"/>
+                            <img class="img-responsive wow zoomIn center-block hidden-xs" src="<?php echo $image['sizes']['gallery-size'] ?>" alt="" data-wow-duration="1s" data-wow-delay="0.5s"/>
                         </a>
+
+                        <img class="img-responsive center-block visible-xs" src="<?php echo $image['sizes']['gallery-size'] ?>" alt="" />
+
                     </figure>                        
 
                 <?php endforeach; ?>    
@@ -114,8 +122,10 @@ if ($gallery_2) :
         <div class="CTA-content">
             <h2 class="headline text-center"><?php the_field('home_optin_headline'); ?></h2>
             <div class="btn-holder text-center">
-                <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_left_button_text'); ?></a>
-                <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_right_button_text'); ?></a>
+                <!-- <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_left_button_text'); ?></a> -->
+                <!-- <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_right_button_text'); ?></a> -->
+                <?php the_field('site_optin_left_btn_code', 5); ?>
+                <?php the_field('site_optin_right_btn_code', 5); ?>            
             </div>            
         </div>
 
@@ -149,8 +159,11 @@ if ($gallery_3) :
                     <!-- </pre> -->
                     <figure class="pin-item" >
                         <a href="<?php echo $image['url'] ?>"  data-rel="lightbox-0">
-                            <img class="img-responsive wow zoomIn center-block" src="<?php echo $image['sizes']['gallery-size'] ?>" alt="" data-wow-duration="1s" data-wow-delay="0.5s"/>
+                            <img class="img-responsive wow zoomIn center-block hidden-xs" src="<?php echo $image['sizes']['gallery-size'] ?>" alt="" data-wow-duration="1s" data-wow-delay="0.5s"/>
                         </a>
+
+                        <img class="img-responsive center-block visible-xs" src="<?php echo $image['sizes']['gallery-size'] ?>" alt="" />
+
                     </figure>                        
 
                 <?php endforeach; ?>    
@@ -170,8 +183,10 @@ if ($gallery_3) :
         <div class="CTA-content">
             <h2 class="headline text-center"><?php the_field('home_optin_headline'); ?></h2>
             <div class="btn-holder text-center">
-                <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_left_button_text'); ?></a>
-                <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_right_button_text'); ?></a>
+                <!-- <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_left_button_text'); ?></a> -->
+                <!-- <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_right_button_text'); ?></a> -->
+                <?php the_field('site_optin_left_btn_code', 5); ?>
+                <?php the_field('site_optin_right_btn_code', 5); ?>            
             </div>            
         </div>
 
@@ -204,9 +219,12 @@ if ($gallery_4) :
                     <!-- </pre> -->
                     <figure class="pin-item" >
                         <a href="<?php echo $image['url'] ?>"  data-rel="lightbox-0">
-                            <img class="img-responsive wow zoomIn center-block" src="<?php echo $image['sizes']['gallery-size'] ?>" alt="" data-wow-duration="1s" data-wow-delay="0.5s"/>
+                            <img class="img-responsive wow zoomIn center-block hidden-xs" src="<?php echo $image['sizes']['gallery-size'] ?>" alt="" data-wow-duration="1s" data-wow-delay="0.5s"/>
                         </a>
-                    </figure>                        
+                    </figure>
+
+                        <img class="img-responsive center-block visible-xs" src="<?php echo $image['sizes']['gallery-size'] ?>" alt="" />
+
 
                 <?php endforeach; ?>    
 
@@ -225,8 +243,10 @@ if ($gallery_4) :
         <div class="CTA-content">
             <h2 class="headline text-center"><?php the_field('home_optin_headline'); ?></h2>
             <div class="btn-holder text-center">
-                <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_left_button_text'); ?></a>
-                <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_right_button_text'); ?></a>
+                <!-- <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_left_button_text'); ?></a> -->
+                <!-- <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_right_button_text'); ?></a> -->
+                <?php the_field('site_optin_left_btn_code', 5); ?>
+                <?php the_field('site_optin_right_btn_code', 5); ?>            
             </div>            
         </div>
 
@@ -259,8 +279,11 @@ if ($gallery_5) :
                     <!-- </pre> -->
                     <figure class="pin-item" >
                         <a href="<?php echo $image['url'] ?>"  data-rel="lightbox-0">
-                            <img class="img-responsive wow zoomIn center-block" src="<?php echo $image['sizes']['gallery-size'] ?>" alt="" data-wow-duration="1s" data-wow-delay="0.5s"/>
+                            <img class="img-responsive wow zoomIn center-block hidden-xs" src="<?php echo $image['sizes']['gallery-size'] ?>" alt="" data-wow-duration="1s" data-wow-delay="0.5s"/>
                         </a>
+
+                        <img class="img-responsive center-block visible-xs" src="<?php echo $image['sizes']['gallery-size'] ?>" alt="" />
+
                     </figure>                        
 
                 <?php endforeach; ?>    
@@ -280,8 +303,10 @@ if ($gallery_5) :
         <div class="CTA-content">
             <h2 class="headline text-center"><?php the_field('home_optin_headline'); ?></h2>
             <div class="btn-holder text-center">
-                <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_left_button_text'); ?></a>
-                <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_right_button_text'); ?></a>
+                <!-- <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_left_button_text'); ?></a> -->
+                <!-- <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_right_button_text'); ?></a> -->
+                <?php the_field('site_optin_left_btn_code', 5); ?>
+                <?php the_field('site_optin_right_btn_code', 5); ?>            
             </div>            
         </div>
 
@@ -314,8 +339,11 @@ if ($gallery_6) :
                     <!-- </pre> -->
                     <figure class="pin-item" >
                         <a href="<?php echo $image['url'] ?>"  data-rel="lightbox-0">
-                            <img class="img-responsive wow zoomIn center-block" src="<?php echo $image['sizes']['gallery-size'] ?>" alt="" data-wow-duration="1s" data-wow-delay="0.5s"/>
+                            <img class="img-responsive wow zoomIn center-block hidden-xs" src="<?php echo $image['sizes']['gallery-size'] ?>" alt="" data-wow-duration="1s" data-wow-delay="0.5s"/>
                         </a>
+
+                        <img class="img-responsive center-block visible-xs" src="<?php echo $image['sizes']['gallery-size'] ?>" alt="" />
+                        
                     </figure>                        
 
                 <?php endforeach; ?>    
@@ -335,8 +363,10 @@ if ($gallery_6) :
         <div class="CTA-content">
             <h2 class="headline text-center"><?php the_field('home_optin_headline'); ?></h2>
             <div class="btn-holder text-center">
-                <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_left_button_text'); ?></a>
-                <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_right_button_text'); ?></a>
+                <!-- <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_left_button_text'); ?></a> -->
+                <!-- <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_right_button_text'); ?></a> -->
+                <?php the_field('site_optin_left_btn_code', 5); ?>
+                <?php the_field('site_optin_right_btn_code', 5); ?>            
             </div>            
         </div>
 

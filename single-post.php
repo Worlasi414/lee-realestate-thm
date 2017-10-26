@@ -8,7 +8,7 @@
  * @package Moose_Framework
  */
 
-get_header('blog'); ?>
+get_header(); ?>
 <section class="container">
 <!-- <h1>Blog Single Only</h1> -->
 

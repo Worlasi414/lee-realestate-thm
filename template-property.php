@@ -15,7 +15,7 @@
  * @package Moose_Framework
  */
 
-get_header(); ?>
+get_header('property'); ?>
 
 
 <section id="imb-property-video-description" class="container-fluid">
@@ -65,8 +65,10 @@ get_header(); ?>
         <div class="CTA-content">
             <h2 class="headline text-center"><?php the_field('home_optin_headline'); ?></h2>
             <div class="btn-holder text-center">
-                <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_left_button_text'); ?></a>
-                <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_right_button_text'); ?></a>
+                <!-- <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_left_button_text'); ?></a> -->
+                <!-- <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_right_button_text'); ?></a> -->
+                <?php the_field('site_optin_left_btn_code', 5); ?>
+                <?php the_field('site_optin_right_btn_code', 5); ?>
             </div>            
         </div>
 
@@ -253,8 +255,11 @@ get_header(); ?>
         <div class="CTA-content">
             <h2 class="headline text-center"><?php the_field('home_optin_headline'); ?></h2>
             <div class="btn-holder text-center">
-                <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_left_button_text'); ?></a>
-                <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_right_button_text'); ?></a>
+                <!-- <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_left_button_text'); ?></a> -->
+                <!-- <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#myModal-hero"><?php the_field('home_optin_right_button_text'); ?></a> -->
+                <?php the_field('site_optin_left_btn_code', 5); ?>
+                <?php the_field('site_optin_right_btn_code', 5); ?>
+            
             </div>            
         </div>
 
@@ -308,8 +313,11 @@ get_header(); ?>
         <div class="CTA-content">
             <h2 class="headline text-center">Request A Private Viewing or A VIP Invitation</h2>
             <div class="btn-holder text-center">
-                <a class="btn btn-primary btn-lg" href="#">PRIVATE VIEWING</a>
-                <a class="btn btn-primary btn-lg" href="#">REQUEST AN INVITE</a>
+                <!-- <a class="btn btn-primary btn-lg" href="#">PRIVATE VIEWING</a> -->
+                <!-- <a class="btn btn-primary btn-lg" href="#">REQUEST AN INVITE</a> -->
+                <?php the_field('site_optin_left_btn_code', 5); ?>
+                <?php the_field('site_optin_right_btn_code', 5); ?>
+            
             </div>            
         </div>
 

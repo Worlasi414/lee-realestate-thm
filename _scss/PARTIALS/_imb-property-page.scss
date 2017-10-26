@@ -18,7 +18,7 @@
 		.text-content {
 			.headline {
 				padding-top: 5rem;
-				color: lighten( $gray-light, 15% );
+				color: $gray-lighter;
 				
 				// border: 1px solid red;
 			}
@@ -32,7 +32,7 @@
 	margin-top: 3rem;
 	// border: 3px dotted yellow;
 
-	background: url("/wp-content/uploads/2017/10/lee-property-CTA-bg.jpg") no-repeat center center fixed;
+	background: url("/wp-content/uploads/2017/10/sample-paralax-bg-1600x500.jpg") no-repeat center center fixed;
 
 	  -webkit-background-size: cover;
 
@@ -46,8 +46,8 @@
 	  	margin-top: 10rem;
 
 	  	.headline {
-			color: lighten( $gray-light, 15% );
-
+			color: $gray-lighter;
+			padding-bottom: 2rem;
 	  	}
 		
 		@media ( max-width: 450px ) {
@@ -55,12 +55,16 @@
 	  		padding-bottom: 2rem;
 	  	}	  	
 
-	  	.btn {
-	  		min-width: 210px;
-	  		margin-bottom: 1rem;
+	  	.btn-holder {
+			
+	  		button {
+	  			min-width: 250px !important;
+	  			margin-bottom: 1.5rem;
+	  		}	  		
 	  	}
 	  }
 }
+
 #imb-property-facts {
 	// min-height: 300px;
 	margin-top: 5rem;
@@ -82,16 +86,16 @@
 		
 			td {
 				border-color: $steel;
-				color: gray;
+				color: $gray-lighter;
 				background: black;
 				border-right: 1px solid black;
 
 				.topic {
-					color: lighten( gray, 10% );
+					color: $gray-lighter;
 					text-transform: uppercase;
 				}
 				.data {
-					color: lighten( gray, 20% );
+					color: $gray-lighter;
 				}
 			}
 
@@ -105,7 +109,7 @@
 			th {
 				background: $steel;
 				.headline {
-					color: lighten( gray, 20% );
+					color: $gray-lighter;
 
 				}
 			}
@@ -137,16 +141,16 @@
 		
 			td {
 				border-color: $steel;
-				color: lighten( gray, 20% );
+				color: $gray-lighter;
 				background: black;
 				border-right: 1px solid black;
 
 				.topic {
-					color: lighten( gray, 10% );
+					color: $gray-lighter;
 					text-transform: uppercase;
 				}
 				.data {
-					color: lighten( gray, 20% );
+					color: $gray-lighter;
 				}				
 			}
 			.topic-cell {
@@ -159,7 +163,7 @@
 			th {
 				background: $steel;
 				.headline {
-					color: lighten( gray, 20% );
+					color: $gray-lighter;
 
 				}
 			}

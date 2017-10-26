@@ -20,6 +20,9 @@
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/_css/icons.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/_css/style5.css" />
+<!-- <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/_css/default.css" /> -->
+<!-- <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/_css/component.css" /> -->
+
 <!--===========================================
 =            CUSTOM ANALYTICS TAGS - HEAD     =
 ============================================-->
@@ -35,8 +38,6 @@
 <?php endif; ?>	
 
 <!--====  End of CUSTOM ANALYTICS TAGS  ====-->
-
-
 
 <?php wp_head(); ?>
 </head>

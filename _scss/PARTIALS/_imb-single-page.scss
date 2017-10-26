@@ -11,7 +11,8 @@
 	padding-bottom: 5rem;
 
 	h1, h2, h3, h4, h5 {
-		color: lighten( $imb-secondary, 5% );
+		// color: lighten( $imb-secondary, 5% );
+		color: $gray-lighter;
 		padding-right: 2rem;
 		// margin-top: 5rem;
 	}
@@ -62,7 +63,8 @@
 			font-variant: small-caps;
 			font-size: 4rem;
 			font-weight: 500;
-			color: darken( $imb-secondary, 0% );
+			color: $gray-lighter;
+			// color: darken( $imb-secondary, 0% );
 			padding-bottom: 1rem;
 			padding-right: 2rem;
 			text-align: center !important;
@@ -97,7 +99,8 @@
 		p {
 			font-size: 2rem;
 			font-weight: 300;
-			color: lighten( $imb-gray, 15% );
+			color: $gray-lighter;
+			// color: lighten( $imb-gray, 15% );
 		}
 	}
 

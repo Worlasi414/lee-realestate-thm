@@ -1,0 +1,47 @@
+/**
+ *
+ * START PAGE TOP ROADMAP 
+ *
+ */
+
+.imb-home-CTA {
+	min-height: 300px;
+	// margin-top: 3rem;
+	// border: 3px dotted yellow;
+
+	background: url("/wp-content/uploads/2017/10/sample-paralax-bg-1600x500.jpg") no-repeat center center fixed;
+	// background: url("/wp-content/uploads/2017/10/lee-home-CTA.jpg") no-repeat center center fixed;
+
+	  -webkit-background-size: cover;
+
+	  -moz-background-size: cover;
+
+	  -o-background-size: cover;
+
+	  background-size: cover;	
+
+	  .CTA-content {
+	  	margin-top: 10rem;
+
+	  	@media ( max-width: 450px ) {
+	  		margin-top: 4rem;
+	  		padding-bottom: 2rem;
+	  	}
+	  	.headline {
+	  		color: lighten( gray, 25% );
+	  		padding-bottom: 2rem;
+	  	}
+
+	  	.btn-holder {
+			
+	  		button {
+	  			min-width: 250px !important;
+	  			margin-bottom: 1.5rem;
+	  		}	  		
+	  	}
+
+	  }
+}
+
+
+

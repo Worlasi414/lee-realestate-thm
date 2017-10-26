@@ -14,7 +14,7 @@ $imb-red: #bb324a;
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css);
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
-@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+// @import url('https://fonts.googleapis.com/css?family=Archivo+Black');
 
 
 html { 
@@ -45,7 +45,8 @@ body {
 	}
 
 	h1,h2,h3,h4,h5 {
-		color: $imb-secondary;
+		color: $gray-lighter;
+		// color: $imb-secondary;
 		// padding-top: 1rem;
 		// padding-bottom: 1rem;
 		margin-top: 0;
@@ -178,7 +179,7 @@ img {
  * HOME PAGE SOCIAL PROOF
  *
  */
-@import "PARTIALS/imb-home-social-proof";
+@import "PARTIALS/imb-home-CTA";
 
 
 /**
@@ -186,7 +187,7 @@ img {
  * HOME PAGE INFO BLOCK
  *
  */
-@import "PARTIALS/imb-home-info-block";
+// @import "PARTIALS/imb-home-info-block";
 
 
 /**
@@ -194,7 +195,7 @@ img {
  * HOME PAGE TESTIMONIAL
  *
  */
-@import "PARTIALS/imb-home-testimonial";
+// @import "PARTIALS/imb-home-testimonial";
 
 
 /*=====  End of Home page style END  ======*/
@@ -352,14 +353,14 @@ img {
  * BLOG INDEX PAGE STYLES
  *
  */
-@import "PARTIALS/_imb-blog-indx-page";
+// @import "PARTIALS/_imb-blog-indx-page";
 
 /**
  *
  * ARCHIVE INDEX PAGE STYLES
  *
  */
-@import "PARTIALS/_imb-archive-page";
+// @import "PARTIALS/_imb-archive-page";
 
 
 //**** Post footer icons

@@ -20,21 +20,8 @@
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/_css/icons.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/_css/style5.css" />
-<!--===========================================
-=            CUSTOM ANALYTICS TAGS - HEAD     =
-============================================-->
-
-<?php if (get_field('before_ending_head_tag')) : ?>
-
-	<?php the_field('before_ending_head_tag'); ?>
-
-<?php else : ?>
-
-	<?php the_field('before_ending_head_tag_default', 'option'); ?>
-
-<?php endif; ?>	
-
-<!--====  End of CUSTOM ANALYTICS TAGS  ====-->
+<!-- <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/_css/default.css" /> -->
+<!-- <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/_css/component.css" /> -->
 
 
 
@@ -59,21 +46,6 @@
 
 <body <?php body_class(); ?>>
 
-<!--======================================================
-=            CUSTOM ANALYTICS TAGS - BODY TOP            =
-=======================================================-->
-
-<?php if (get_field('after_top_body_tag')) : ?>
-
-	<?php the_field('after_top_body_tag'); ?>
-
-<?php else : ?>
-
-	<?php the_field('after_top_body_tag_default', 'option'); ?>
-
-<?php endif; ?>	
-
-<!--====  End of CUSTOM ANALYTICS TAGS - BODY TOP  ====-->
 
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'moose-frame' ); ?></a>

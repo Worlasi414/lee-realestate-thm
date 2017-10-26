@@ -167,7 +167,7 @@ add_action( 'widgets_init', 'moose_frame_widgets_init' );
  * Enqueue scripts and styles.
  */
 function moose_frame_scripts() {
-	wp_enqueue_style( 'moose-frame-style', get_stylesheet_uri(), '', '3.0' );
+	wp_enqueue_style( 'moose-frame-style', get_stylesheet_uri(), '', '4.0' );
 
 	wp_enqueue_style( 'moose-masonry-style', get_template_directory_uri() . '/_masonry-css/style.css', '', '1.0' );
 	wp_enqueue_style( 'moose-masonry-media-query-style', get_template_directory_uri() . '/_masonry-css/media_query.css', '', '1.0' );
@@ -370,5 +370,22 @@ add_filter('rest_prepare_post', 'prepare_rest', 10, 3 );
 
 /*=====  End of PREPARE REST API  ======*/
 
+/*=============================================
+=            ACF OPTIONS PAGE CODE            =
+=============================================*/
+
+if( function_exists('acf_add_options_page') ) {
+ 
+	$option_page = acf_add_options_page(array(
+		'icon_url' 	=> 'dashicons-chart-line',
+		'menu_title' 	=> 'Analytics',
+		'menu_slug' 	=> 'analytics-default-settings',
+		// 'capability' 	=> 'edit_posts',
+		// 'redirect' 	=> false
+	));
+ 
+}
+
+/*=====  End of ACF OPTIONS PAGE CODE  ======*/
 
 
